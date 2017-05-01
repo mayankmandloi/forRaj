@@ -1,0 +1,11 @@
+<a href="#!/addItem" style="margin-bottom: 10px;" class="btn btn-primary btn-lg btn-block">
+    <span class="glyphicon glyphicon-plus"></span> Click to add</a>
+<ul ng-repeat="item in items">
+  <li class="list-group-item text-center clearfix">
+  {{item.name | uppercase}}
+  <a href="#!/addItem/edit/{{item.id}}" class="btn btn-sm btn-default pull-right">
+      <span class="glyphicon glyphicon-pencil"></span>
+  </a>
+</li>
+
+</ul>
