@@ -8,15 +8,14 @@ app.config(function ($routeProvider) {
     templateUrl:"views/addItem.html",
     controller:"showList"
   });
-
 });
 
 app.service("ShoppingService" ,function () {
   var ShoppingService = {};
   function getId() {
-    if (ShoppingService.items.length) {
+    if (ShoppingService.items.length) {	
       return ++(ShoppingService.items[ShoppingService.items.length-1].id);
-    }
+    }	
     else return 0;
   }
   ShoppingService.items=[];

@@ -1,0 +1,17 @@
+        <table class="table table-bordered">
+            <thead>
+                <th>Select Item</th>
+                <th>Product Name</th>
+                <th>Delete</th>
+                <th>Edit</th>
+            </thead>
+            <tbody ng-repeat="item in items">
+                <td><input type="checkbox" /></td>
+                <td>{{item.name}}{{item.id}}</td>
+                <td><button type="button" class="btn btn-danger" ng-click="deleteItem(deletepro)">Delete</button> </td>
+                <td><button type="button" class="btn btn-default">Edit</button></td>
+            </tbody>
+        </table>
+        <div class="text-center">
+            <a href="#/addItem"><button type="button" class="btn btn-success">ADD PRODUCT</button></a>
+        </div>
