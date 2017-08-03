@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Bhumi</title>
+    <script src="angular.js" charset="utf-8"></script>
+    <style media="screen">
+      input.ng-invalid.ng-touched{
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body ng-app="">
+      <form class="" name="fam" novalidate>
+        <input type="text" name="uName" value="" ng-model="user.name" required ng-minLength=5>
+        <span ng-show="fam.uName.$dirty && fam.uName.$invalid">Wrong Input</span><span ng-show="fam.uName.$dirty && fam.uName.$valid">Right Input</span>
+      </form>
+  </body>
+</html>
